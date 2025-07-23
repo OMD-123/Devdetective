@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f6fc;
+  color: #333;
+  padding: 2rem;
+   max-width:800px;
+  margin:auto;
+}
+.moon{
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 600px;
+ 
+}
+
+.headin1 {
+  display: flex;
+  /* flex-direction: row; */
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2b2d42;
+  margin-bottom: 2rem;
+}
+
+form[data-search-form] {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+form input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+form button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.main-body {
+  display: flex;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  gap: 2rem;
+}
+
+.image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rights-side {
+  flex: 1;
+}
+
+.rights-side h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.rights-side [data-username] {
+  color: #007bff;
+  margin: 0.2rem 0;
+}
+
+.Description p {
+  margin: 1rem 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.followers {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f4ff;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.followers > div p:first-child {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.followers > div p:last-child {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.rights-side > div > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555;
+  margin: 0.3rem 0;
+}
+
+.rights-side i {
+  color: #333;
+}
+
+[data-user-link],
+[data-user-twitter],
+[data-user-addres],
+[data-user-city] {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+[data-user-link]:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+
+/* Dark Mode */
+body.dark {
+  background-color: #141d2f;
+  color: #ffffff;
+}
+
+body.dark .wrapper {
+  color: white;
+}
+
+body.dark .main-body {
+  background-color: #1e2a47;
+  box-shadow: none;
+}
+
+body.dark form[data-search-form] {
+  background-color: #1e2a47;
+}
+
+body.dark form input[type="text"] {
+  color: white;
+}
+
+body.dark .followers {
+  background-color: #141d2f;
+}
+
+body.dark i {
+  color: #ccc;
+}
+
+body.dark [data-user-link],
+body.dark [data-user-twitter],
+body.dark [data-user-addres],
+body.dark [data-user-city] {
+  color: #ccc;
+}
+
+/* Dark Mode Toggle Button */
+.dark-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+body.dark .dark-toggle {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .main-body {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .image img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .followers {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  form[data-search-form] {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  form button {
+    width: 100%;
+  }
+}

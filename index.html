@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevDetective</title>
+  <link rel="stylesheet" href="STYLE.CSS">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="headin1">
+      <div><h1>DevDetective</h1></div>
+     <button id="dark-mode-toggle" class="dark-toggle">
+  <i class="fa-solid fa-moon"></i>
+</button>
+    </div>
+     
+ 
+</button>
+    </div>
+
+    <div>
+     <form data-search-form>
+  <input type="text" data-TakeInputWR placeholder="Enter GitHub username" />
+  <button type="submit" data-searchbtn>Search</button>
+</form>
+    </div>
+
+    <div class="main-body">
+      <div class="image">
+        <img data-profile-image src="imageom.jpg" alt="User Image" />
+      </div>
+
+      <div class="rights-side">
+        <div>
+          <h1 data-user-name>Om Dandagvhal</h1>
+          <p data-user-joining>Tue Apr 23 2024</p>
+        </div>
+
+        <div class="mailID">
+          <p data-username>OMD-123</p>
+        </div>
+
+        <div class="Description">
+          <p data-user-Desc>
+           || Full Stack Web Developer || DS&Algo 
+          </p>
+        </div>
+
+        <div class="followers">
+          <div class="repo">
+            <p>Repos</p>
+            <p data-user-repo>3</p>
+          </div>
+
+          <div class="follo">
+            <p>Followers</p>
+            <p data-user-followers>110</p>
+          </div>
+
+          <div class="following">
+            <p>Following</p>
+            <p data-user-follwing>1</p>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p data-user-city>nashik</p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-link"></i>
+            <a href="#" target="_blank" data-user-link>https://github.com/OMD-123</a>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <i class="fa-brands fa-twitter"></i>
+            <p data-user-twitter>Not available</p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-building"></i>
+            <p data-user-addres>Not available</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
